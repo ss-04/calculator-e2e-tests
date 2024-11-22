@@ -10,7 +10,7 @@ This project contains end-to-end tests for the Google Calculator component using
    cd calculator-e2e-tests
 
 2. Install dependencies
-    npm install
+       npm install
 
 3. Running Tests
 # Open Cypress interactive mode
