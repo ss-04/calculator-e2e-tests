@@ -9,10 +9,11 @@ This project contains end-to-end tests for the Google Calculator component using
    git clone https://github.com/ss-04/calculator-e2e-tests
    cd calculator-e2e-tests
 
-2. Install dependencies
+2. Install dependencies:
+   
       npm install
 
-4. Running Tests
+4. Running Tests:
 # Open Cypress interactive mode
     npx cypress open
 
