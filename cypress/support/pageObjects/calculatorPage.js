@@ -7,9 +7,26 @@ class CalculatorPage {
     cy.xpath(numberButtonXPath(number)).click();
   }
 
+  // Method to click a positive number
+  clickPositiveNumber(number) {
+    number.toString().split('').forEach(digit => {
+      cy.xpath(exactNumberButtonXPath(digit)).click();
+    });
+  }
+
+  // Method to click a negative number
+  clickNegativeNumber(number) {
+    cy.xpath(exactNumberButtonXPath('−')).click();
+    this.clickPositiveNumber(number.slice(1));
+  }
+
   // Method to click an exact number button (for specific numbers like 0, 1, etc.)
   clickExactNumber(number) {
-    cy.xpath(exactNumberButtonXPath(number)).click();
+    if (number.startsWith('−')) {
+      this.clickNegativeNumber(number);
+    } else {
+      this.clickPositiveNumber(number);
+    }
   }
 
   // Method to click an operator button (+, −, ×, ÷, =, AC, CE)

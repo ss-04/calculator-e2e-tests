@@ -11,6 +11,7 @@ export const operatorButtonXPath = (operator) => {
     '×': "//div[@aria-label='multiply'][contains(text(), '×')]",
     '÷': "//div[@aria-label='divide'][contains(text(), '÷')]",
     '=': "//div[@aria-label='equals'][contains(text(), '=')]",
+    '.': "//div[@aria-label='point'][contains(text(), '.')]",
     'AC': "//div[@aria-label='all clear']",
     'CE': "//div[@aria-label='clear entry']",
   };
