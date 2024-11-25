@@ -1,6 +1,6 @@
 # google-calculator-cypress-project
 
-This project contains end-to-end tests for the Google Calculator component using Cypress. It tests basic calculator operations such as addition, subtraction, multiplication, and division, as well as edge cases like handling decimals and division by zero.
+This project contains end-to-end tests for the Google Calculator component using Cypress and JavaScript. It tests basic calculator operations such as addition, subtraction, multiplication, and division, as well as edge cases like handling decimals and division by zero.
 
 ## Installation
 
